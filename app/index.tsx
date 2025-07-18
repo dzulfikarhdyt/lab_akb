@@ -1,58 +1,51 @@
-import { Text, View } from 'react-native';
+// import { StyleSheet, Text, View } from 'react-native';
 
-export default function Index() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: 20,
-        backgroundColor: 'white',
-      }}
-    >
-      <View
-        style={{
-          paddingHorizontal: 20,
-          paddingVertical: 10,
-          backgroundColor: 'red',
-          borderRadius: 0,
-        }}
-      >
-        <Text
-          style={{
-            fontSize: 18,
-            fontWeight: 'bold',
-            color: 'white',
-          }}
-        >
-          M.Dzulfikar Hidayat
-        </Text>
-      </View>
+// const mahasiswa = [
+//   { nama: 'Muh Nur Sandi', stambuk: '105841106721', font: 'Anton' },
+//   { nama: 'Afifah Auliyah', stambuk: '105841111022', font: 'BebasNeue' },
+//   { nama: 'Muh Fikri Maulana', stambuk: '105841107622', font: 'LilitaOne' },
+//   { nama: 'Muhammad Hasraddin Hasnan', stambuk: '105841107722', font: 'LobsterTwo-Bold' },
+//   { nama: 'Muhammad Dzulfikar Hidayat', stambuk: '105841107822', font: 'Michroma' }, // kamu
+//   { nama: 'Ahmad Yani', stambuk: '105841107922', font: 'Inconsolata' },
+//   { nama: 'Rosfika Awalia', stambuk: '105841108122', font: 'Oswald' },
+//   { nama: 'Yogi A. Ammah', stambuk: '105841108222', font: 'Raleway' },
+//   { nama: 'Ursan', stambuk: '105841108722', font: 'Pacifico' },
+//   { nama: 'Rika Armoyani', stambuk: '105841108822', font: 'SpaceMono-Regular' },
+// ];
 
-      <View
-        style={{
-          backgroundColor: 'red',
-          borderRadius: 50,
-          paddingHorizontal: 30,
-          paddingVertical: 10,
-        }}
-      >
-        <Text style={{ color: 'white', fontWeight: 'bold' }}>105841107822</Text>
-      </View>
+// // Urutkan berdasarkan stambuk ASCENDING
+// const sorted = [...mahasiswa].sort((a, b) => a.stambuk.localeCompare(b.stambuk));
 
-      <View
-        style={{
-          width: 0,
-          height: 0,
-          borderLeftWidth: 40,
-          borderRightWidth: 40,
-          borderBottomWidth: 70,
-          borderLeftColor: 'transparent',
-          borderRightColor: 'transparent',
-          borderBottomColor: 'red',
-        }}
-      />
-    </View>
-  );
-}
+// // Ambil 5 pertama dan 5 terakhir
+// const ordered = [...sorted.slice(0, 5), ...sorted.slice(-5)];
+
+// export default function App() {
+//   return (
+//     <View style={styles.container}>
+//       {ordered.map((mhs, index) => (
+//         <Text key={index} style={[styles.text, { fontFamily: mhs.font }, index < 5 ? styles.bold : styles.regular]}>
+//           {index + 1}. {mhs.nama} ({mhs.stambuk})
+//         </Text>
+//       ))}
+//     </View>
+//   );
+// }
+
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     justifyContent: 'center',
+//     alignItems: 'flex-start',
+//     padding: 20,
+//     gap: 10,
+//   },
+//   text: {
+//     fontSize: 16,
+//   },
+//   bold: {
+//     fontWeight: 'bold',
+//   },
+//   regular: {
+//     fontWeight: 'normal',
+//   },
+// });
